@@ -30,4 +30,6 @@ public class TopicService {
     public void updateTopic(String id, Topic topic){
         topicRepository.save(topic);
     }
+
+    public void deleteTopic(String id){ topicRepository.deleteById(id); }
 }
